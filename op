@@ -6,7 +6,7 @@ Reading examples into memory...100..200..300..400..500..600..OK. (640 examples r
 Setting default regularization parameter C=0.0012
 Optimizing....................................................................................................................................................................done. (165 iterations)
 Optimization finished (7 misclassified, maxdiff=0.00096).
-Runtime in cpu-seconds: 0.02
+Runtime in cpu-seconds: 0.03
 Number of SV: 505 (including 211 at upper bound)
 L1 loss: loss=84.39454
 Norm of weight vector: |w|=0.54798
@@ -40,7 +40,7 @@ Reading examples into memory...100..200..300..400..500..600..OK. (640 examples r
 Setting default regularization parameter C=0.0012
 Optimizing........................................................................................................................................................................done. (169 iterations)
 Optimization finished (9 misclassified, maxdiff=0.00089).
-Runtime in cpu-seconds: 0.03
+Runtime in cpu-seconds: 0.02
 Number of SV: 511 (including 224 at upper bound)
 L1 loss: loss=92.01133
 Norm of weight vector: |w|=0.54998
@@ -74,7 +74,7 @@ Reading examples into memory...100..200..300..400..500..600..OK. (640 examples r
 Setting default regularization parameter C=0.0012
 Optimizing.......................................................................................................................................................................................done. (184 iterations)
 Optimization finished (7 misclassified, maxdiff=0.00091).
-Runtime in cpu-seconds: 0.03
+Runtime in cpu-seconds: 0.02
 Number of SV: 522 (including 213 at upper bound)
 L1 loss: loss=87.41104
 Norm of weight vector: |w|=0.55600
