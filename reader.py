@@ -2,7 +2,8 @@ from __future__ import division
 import nltk
 import nltk.classify.svm
 import svmlight
-import pickle
+import math
+from nlp_common import TOT_NUM_DOCS
 
 def printSvmIn(filename, label, wordHash):
   for line in open(filename):
@@ -17,7 +18,7 @@ def printSvmIn(filename, label, wordHash):
            subHash[word] = wordHash[word]
        sortedKeys = sorted(subHash, key=lambda key: subHash[key])
        for wordtype in sortedKeys:
-           print " " + str(wordHash[wordtype]) + ":" + str(10000*ufd[wordtype] / (len(words) * df[wordtype])),
+           print " " + str(wordHash[wordtype]) + ":" + str(ufd[wordtype] * math.log(TOT_NUM_DOCS/df[wordtype])),
          #  print " " + str(wordHash[wordtype]) + ":" + str(ufd[wordtype]),
 #       print "#" + str((w, subHash[w]) for w in sortedKeys)
        print ""
@@ -62,10 +63,10 @@ for line in open(deceptiveRevFile):
           wt[word] = True
 
 
-printSvmIn(truthfulRevFile, -1, wordHash)
-printSvmIn(deceptiveRevFile, 1, wordHash)
+printSvmIn(truthfulRevFile, "+1", wordHash)
+printSvmIn(deceptiveRevFile, "-1", wordHash)
 
-whfile = open("WordHash.txt", "w");
+whfile = open("info/WordHash.txt", "w");
 srtd = sorted(wordHash, key=lambda key:  wordHash[key])
 totdf = 0
 for key in srtd:
