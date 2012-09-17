@@ -1,3 +1,7 @@
+import sys
+print "Args: ",sys.argv
+feature_vector_file = sys.argv[2]
+
 from nlp_common import *
 trdir = "test_review_files"
 testfiles = []
@@ -10,7 +14,7 @@ truth = []
 lies = []
 
 i = 0
-for line in open("review_features_svm.tfidf"):
+for line in open(feature_vector_file):
     if i/NUM_DOC_PER_LABEL == 0:
         truth.append(line)
     else:
