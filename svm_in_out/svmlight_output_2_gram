@@ -1,0 +1,170 @@
+
+********TRAINING SVM FOR TEST: 0*****************
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..OK. (640 examples read)
+Setting default regularization parameter C=0.0195
+Optimizing.............................................................................................................................................................................................done. (190 iterations)
+Optimization finished (1 misclassified, maxdiff=0.00099).
+Runtime in cpu-seconds: 0.06
+Number of SV: 620 (including 197 at upper bound)
+L1 loss: loss=52.52010
+Norm of weight vector: |w|=2.64377
+Norm of longest example vector: |x|=17.97684
+Estimated VCdim of classifier: VCdim<=2259.78127
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=89.22% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>10.31% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>10.41% (rho=1.00,depth=0)
+Number of kernel evaluations: 18655
+Writing model file...done
+
+
+********CLASSIFYING TEST CASE: 0**********************
+
+Reading model...OK. (620 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.00
+Accuracy on test set: 86.88% (139 correct, 21 incorrect, 160 total)
+Precision/recall on test set: 87.34%/86.25%
+
+
+*********END OF TEST 1*************
+
+
+********TRAINING SVM FOR TEST: 1*****************
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..OK. (640 examples read)
+Setting default regularization parameter C=0.0198
+Optimizing............................................................................................................................................................................done. (173 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00099).
+Runtime in cpu-seconds: 0.05
+Number of SV: 621 (including 199 at upper bound)
+L1 loss: loss=56.25422
+Norm of weight vector: |w|=2.65323
+Norm of longest example vector: |x|=15.34478
+Estimated VCdim of classifier: VCdim<=1658.56584
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=86.56% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>15.00% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>14.55% (rho=1.00,depth=0)
+Number of kernel evaluations: 17723
+Writing model file...done
+
+
+********CLASSIFYING TEST CASE: 1**********************
+
+Reading model...OK. (621 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.00
+Accuracy on test set: 90.62% (145 correct, 15 incorrect, 160 total)
+Precision/recall on test set: 94.52%/86.25%
+
+
+*********END OF TEST 1*************
+
+
+********TRAINING SVM FOR TEST: 2*****************
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..OK. (640 examples read)
+Setting default regularization parameter C=0.0192
+Optimizing................................................................................................................................................................................done. (177 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00099).
+Runtime in cpu-seconds: 0.05
+Number of SV: 620 (including 203 at upper bound)
+L1 loss: loss=56.42927
+Norm of weight vector: |w|=2.64754
+Norm of longest example vector: |x|=17.97684
+Estimated VCdim of classifier: VCdim<=2266.22891
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=89.84% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>10.62% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>10.53% (rho=1.00,depth=0)
+Number of kernel evaluations: 17940
+Writing model file...done
+
+
+********CLASSIFYING TEST CASE: 2**********************
+
+Reading model...OK. (620 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.00
+Accuracy on test set: 91.25% (146 correct, 14 incorrect, 160 total)
+Precision/recall on test set: 92.31%/90.00%
+
+
+*********END OF TEST 1*************
+
+
+********TRAINING SVM FOR TEST: 3*****************
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..OK. (640 examples read)
+Setting default regularization parameter C=0.0197
+Optimizing.....................................................................................................................................................................................done. (182 iterations)
+Optimization finished (1 misclassified, maxdiff=0.00089).
+Runtime in cpu-seconds: 0.06
+Number of SV: 613 (including 204 at upper bound)
+L1 loss: loss=53.50280
+Norm of weight vector: |w|=2.65113
+Norm of longest example vector: |x|=17.97684
+Estimated VCdim of classifier: VCdim<=2272.37758
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=90.16% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>10.00% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>9.97% (rho=1.00,depth=0)
+Number of kernel evaluations: 18194
+Writing model file...done
+
+
+********CLASSIFYING TEST CASE: 3**********************
+
+Reading model...OK. (613 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.00
+Accuracy on test set: 87.50% (140 correct, 20 incorrect, 160 total)
+Precision/recall on test set: 89.47%/85.00%
+
+
+*********END OF TEST 1*************
+
+
+********TRAINING SVM FOR TEST: 4*****************
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..OK. (640 examples read)
+Setting default regularization parameter C=0.0196
+Optimizing...............................................................................................................................................................................done. (176 iterations)
+Optimization finished (1 misclassified, maxdiff=0.00097).
+Runtime in cpu-seconds: 0.05
+Number of SV: 620 (including 210 at upper bound)
+L1 loss: loss=59.11159
+Norm of weight vector: |w|=2.65823
+Norm of longest example vector: |x|=17.97684
+Estimated VCdim of classifier: VCdim<=2284.54923
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=90.31% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>9.69% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>9.69% (rho=1.00,depth=0)
+Number of kernel evaluations: 17885
+Writing model file...done
+
+
+********CLASSIFYING TEST CASE: 4**********************
+
+Reading model...OK. (620 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.00
+Accuracy on test set: 92.50% (148 correct, 12 incorrect, 160 total)
+Precision/recall on test set: 97.22%/87.50%
+
+
+*********END OF TEST 1*************
+

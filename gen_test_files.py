@@ -1,5 +1,4 @@
 import sys
-print "Args: ",sys.argv
 feature_vector_file = sys.argv[2]
 
 from nlp_common import *
