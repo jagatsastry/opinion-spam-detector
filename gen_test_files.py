@@ -11,23 +11,20 @@ for i in range(NUM_FOLDS):
   
 truth = []
 lies = []
-
+allRevs = []
 i = 0
 for line in open(feature_vector_file):
-    if i/NUM_DOC_PER_LABEL == 0:
-        truth.append(line)
-    else:
-        lies.append(line)
+    allRevs.append(line)
     i = i + 1
 ti = 0
 li = 0
 idx = 0
-bucketSize = NUM_DOC_PER_LABEL/NUM_FOLDS
+bucketSize = TOT_NUM_DOCS/NUM_FOLDS
 for i in range(NUM_FOLDS):
     ll = i * bucketSize
     ul = ll + bucketSize
-    for line in truth[ll:ul] + lies[ll:ul]:
+    for line in allRevs[ll:ul]:
         testfiles[i].write(line)
-    for line in (truth[0:ll] + truth[ul:NUM_DOC_PER_LABEL] + lies[0:ll] + lies[ul:NUM_DOC_PER_LABEL]):
+    for line in allRevs[0:ll] + allRevs[ul:TOT_NUM_DOCS]:
         trainingfiles[i].write(line)        
   

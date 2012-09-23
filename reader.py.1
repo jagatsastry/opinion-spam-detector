@@ -20,11 +20,15 @@ def getNGrams(line, n):
     return ngramArr + getNGrams(line, n - 1) 
 
   
-def getFeatureVectors(filename, ngramHash):
+def printSvmIn(filename, label, ngramHash):
   allFeatures = []
   for line in open(filename):
        ngrams = getNGrams(line, N_IN_NGRAM)
        ufd = nltk.FreqDist(ngrams);
+       #print "FreqDist: ",ufd
+       #print label,
+       #keys = ufd.keys()
+       #keys.sort()
        subHash = {} 
        maxFd = max(ufd.values());
        for ngram in ufd.keys():
@@ -33,6 +37,11 @@ def getFeatureVectors(filename, ngramHash):
        features = []
        for ngramtype in sortedKeys:
            features.append((str(ngramHash[ngramtype]), str((ufd[ngramtype]/maxFd) * math.log(TOT_NUM_DOCS/df[ngramtype]))))
+           #print " " + str(ngramHash[ngramtype]) + ":" + str((ufd[ngramtype]/maxFd) * math.log(TOT_NUM_DOCS/df[ngramtype])),
+           #print " " + str(ngramHash[ngramtype]) + ":" + str((ufd[ngramtype]) * math.log(TOT_NUM_DOCS/df[ngramtype])),
+         #  print " " + str(ngramHash[ngramtype]) + ":" + str(ufd[ngramtype]),
+#       print "#" + str((w, subHash[w]) for w in sortedKeys)
+       #print ""
        allFeatures.append(features)
   return allFeatures
 
@@ -58,6 +67,11 @@ for line in open(truthfulRevFile):
           else:
               df[ngram] = df[ngram] + 1
           wt[ngram] = True
+#          if ngram is "every":
+#              print line
+
+#print "ngramHash:",ngramHash
+#print "DocFreq:",df
 
 deceptiveRevs = []
 for line in open(deceptiveRevFile):
@@ -75,8 +89,8 @@ for line in open(deceptiveRevFile):
           wt[ngram] = True
 
 
-trueFeatures = getFeatureVectors(truthfulRevFile, ngramHash)
-deceptiveFeatures = getFeatureVectors(deceptiveRevFile, ngramHash)
+trueFeatures = printSvmIn(truthfulRevFile, "-1", ngramHash)
+deceptiveFeatures = printSvmIn(deceptiveRevFile, "+1", ngramHash)
 
 for i in range(NUM_DOC_PER_LABEL):
     trueRev = trueFeatures[i]

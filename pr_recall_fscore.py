@@ -17,11 +17,11 @@ def getStats(fold):
     idx = 0
     for line in predFile:
         num = int(floor(float(line)))
-        if num < 0 and idx < 80:
+        if num < 0 and idx % 2 == 0:
 	    tn = tn + 1
-        elif num >= 0 and idx < 80:
+        elif num >= 0 and idx % 2 == 0:
             fp = fp + 1
-        elif num < 0 and idx >= 80:
+        elif num < 0 and idx % 2 == 1:
             fn = fn + 1
         else:
 	    tp = tp + 1

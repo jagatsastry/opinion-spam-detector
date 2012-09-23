@@ -22,8 +22,17 @@ def getNGrams(line, n):
   
 def getLabeledFeatures(filename, label, ngramHash):
   labeledFeatures = []
+  maxDocLen = 0
+  ngramsArr = []
   for line in open(filename):
        ngrams = getNGrams(line, N_IN_NGRAM)
+       if(len(ngrams) > maxDocLen):
+           maxDocLen = len(ngrams)
+       ngramsArr.append(ngrams)
+
+  maxMaxFd = 0
+  for ngrams in ngramsArr:
+       #ngrams = getNGrams(line, N_IN_NGRAM)
        ufd = nltk.FreqDist(ngrams);
        
        features = {}
@@ -32,10 +41,16 @@ def getLabeledFeatures(filename, label, ngramHash):
            subHash[ngram] = ngramHash[ngram]
        sortedKeys = sorted(subHash, key=lambda key: subHash[key])
        maxFd = max(ufd.values());
+       if(maxMaxFd < maxFd):
+           maxMaxFd = maxFd
        for ngramtype in sortedKeys:
-           features[str(ngramHash[ngramtype])] = ufd[ngramtype]/maxFd #* math.log(TOT_NUM_DOCS/df[ngramtype]));
+           #features[str(ngramHash[ngramtype])] = int( (ufd[ngramtype]/maxFd) * math.log(TOT_NUM_DOCS/df[ngramtype]));
+           val = int(ufd[ngramtype] * math.log(TOT_NUM_DOCS/df[ngramtype]));
+	   if val != 0:
+               features[ngramtype] =  val
 
        labeledFeatures.append((features, label));
+
   return labeledFeatures;
 
 textDir = "/home/jagat/nlp/hotel-reviews"
@@ -83,6 +98,7 @@ ti = 0
 li = 0
 idx = 0
 bucketSize = NUM_DOC_PER_LABEL/NUM_FOLDS
+sumAcc = 0
 for i in range(NUM_FOLDS):
     trainSet, testSet = [], [] #allFeatures[0:160] + allFeatures[240:560] + allFeatures[640:800], allFeatures[160:240] + allFeatures[560:640]
     ll = int(i * bucketSize)
@@ -94,8 +110,11 @@ for i in range(NUM_FOLDS):
 
 
     classifier = nltk.NaiveBayesClassifier.train(trainSet)
-    print "Accuracy for fold %d" % i ,nltk.classify.accuracy(classifier, testSet)
+    acc = nltk.classify.accuracy(classifier, testSet)
+    print "Accuracy for fold %d" % i ,acc
+    sumAcc = sumAcc + acc
 
+print "Average accuracy %f" % (sumAcc/NUM_FOLDS)
 whfile = open("info/Hash_" + str(N_IN_NGRAM) + "_Grams.txt", "w");
 srtd = sorted(ngramHash, key=lambda key:  ngramHash[key])
 totdf = 0
