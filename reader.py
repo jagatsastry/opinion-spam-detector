@@ -36,6 +36,7 @@ def printSvmIn(filename, label, ngramHash):
        sortedKeys = sorted(subHash, key=lambda key: subHash[key])
        for ngramtype in sortedKeys:
            print " " + str(ngramHash[ngramtype]) + ":" + str((ufd[ngramtype]/maxFd) * math.log(TOT_NUM_DOCS/df[ngramtype])),
+           #print " " + str(ngramHash[ngramtype]) + ":" + str((ufd[ngramtype]) * math.log(TOT_NUM_DOCS/df[ngramtype])),
          #  print " " + str(ngramHash[ngramtype]) + ":" + str(ufd[ngramtype]),
 #       print "#" + str((w, subHash[w]) for w in sortedKeys)
        print ""

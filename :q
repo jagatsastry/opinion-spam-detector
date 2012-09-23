@@ -1,4 +1,0 @@
-#!/bin/bash
-git add -A .
-git commit -m "commit"
-echo Sawthat1 | git push origin master -f
