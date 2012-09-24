@@ -1,6 +1,40 @@
 import subprocess
 from nlp_common import *
 
+def runNestedCV():
+    bestCVals = []
+    for i in range(NUM_FOLDS):
+        bestCVals.append(-1);
+
+    for i in range(NUM_FOLDS):
+        cstart = 0
+        cmax = 4
+        bestAcc = 0
+
+        while int(cstart) <= cmax:
+            baseCVals = []
+            for j in range(NUM_FOLDS):
+                baseCVals.append(cstart);
+            predfiles = runSvm(test_review_dir + "/nest_" + str(i), svmdir + "/nest_" + str(i), baseCVals)
+    
+            curTotAcc = 0
+            for predfile in predfiles:
+                curTotAcc = curTotAcc + getStats(predfile)[0]
+	    avgAcc = float(curTotAcc)/len(predfiles)
+	    if avgAcc > bestAcc:
+	        bestAcc = avgAcc
+	        bestCVals[i] = cstart
+        	
+	    print "For fold %d, for c value %f, accuracy is %f" % (i, cstart, avgAcc)
+
+	    if cstart < 1:
+	        cstart = cstart + 0.1
+	    else:
+	        cstart = int(cstart) + 1
+        
+
+        print "For fold %d, the best c value is %f, with accuracy %f" % (i, bestCVals[i], bestAcc)
+    return bestCVals
 
 def runSvm(trdir, outdir, cvals):
     svmexedir = "svmlight"
@@ -33,41 +67,14 @@ def runSvm(trdir, outdir, cvals):
 test_review_dir = "test_review_files"
 svmdir = "svm_in_out"
 
-print "********RUNNING NESTED VALIDATIONS TO OBTAIN OPTIMUM C*********"
-
 bestCVals = []
 for i in range(NUM_FOLDS):
     bestCVals.append(-1);
 
-for i in range(NUM_FOLDS):
-    cstart = 0
-    cmax = 4
-    bestAcc = 0
+if CLASSIFIER_TYPE != 'POS':
+    print "********RUNNING NESTED VALIDATIONS TO OBTAIN OPTIMUM C*********"
+    bestCVals = runNestedCV()
+    print "Obtained C values ",bestCVals
 
-    while int(cstart) <= cmax:
-        baseCVals = []
-        for j in range(NUM_FOLDS):
-            baseCVals.append(cstart);
-        predfiles = runSvm(test_review_dir + "/nest_" + str(i), svmdir + "/nest_" + str(i), baseCVals)
-
-        curTotAcc = 0
-        for predfile in predfiles:
-            curTotAcc = curTotAcc + getStats(predfile)[0]
-	avgAcc = float(curTotAcc)/len(predfiles)
-	if avgAcc > bestAcc:
-	    bestAcc = avgAcc
-	    bestCVals[i] = cstart
-        	
-	print "For fold %d, for c value %f, accuracy is %f" % (i, cstart, avgAcc)
-
-	if cstart < 1:
-	    cstart = cstart + 0.1
-	else:
-	    cstart = int(cstart) + 1
-        
-
-    print "For fold %d, the best c value is %f, with accuracy %f" % (i, bestCVals[i], bestAcc)
-
-print "Obtained C values ",bestCVals
 print "**********RUNNING CROSS VALIDATIONS**********"
 runSvm(test_review_dir, svmdir, bestCVals)

@@ -32,7 +32,6 @@ def getLabeledFeatures(filename, label, ngramHash):
 
   maxMaxFd = 0
   for ngrams in ngramsArr:
-       #ngrams = getNGrams(line, N_IN_NGRAM)
        ufd = nltk.FreqDist(ngrams);
        
        features = {}
@@ -47,7 +46,7 @@ def getLabeledFeatures(filename, label, ngramHash):
            #features[str(ngramHash[ngramtype])] = int( (ufd[ngramtype]/maxFd) * math.log(TOT_NUM_DOCS/df[ngramtype]));
            val = int(ufd[ngramtype] * math.log(TOT_NUM_DOCS/df[ngramtype]));
 	   if val != 0:
-               features[ngramtype] =  val
+               features[ngramtype] =  1
 
        labeledFeatures.append((features, label));
 
@@ -91,14 +90,13 @@ for line in open(deceptiveRevFile):
 allFeatures = getLabeledFeatures(truthfulRevFile, "-1", ngramHash) + getLabeledFeatures(deceptiveRevFile, "+1", ngramHash)
 truthfulFeatures, deceptiveFeatures = allFeatures[0:400], allFeatures[400:800]
 
-#trainSet, testSet = allFeatures[80:400] + allFeatures[480:800], allFeatures[:80] + allFeatures[400:480]
-#trainSet, testSet = allFeatures[0:80] + allFeatures[160:480] + allFeatures[560:800], allFeatures[80:160] + allFeatures[480:560]
-trainSet, testSet = [], [] #allFeatures[0:160] + allFeatures[240:560] + allFeatures[640:800], allFeatures[160:240] + allFeatures[560:640]
+trainSet, testSet = [], [] 
 ti = 0
 li = 0
 idx = 0
 bucketSize = NUM_DOC_PER_LABEL/NUM_FOLDS
 sumAcc = 0
+allStats = []
 for i in range(NUM_FOLDS):
     trainSet, testSet = [], [] #allFeatures[0:160] + allFeatures[240:560] + allFeatures[640:800], allFeatures[160:240] + allFeatures[560:640]
     ll = int(i * bucketSize)
@@ -108,13 +106,18 @@ for i in range(NUM_FOLDS):
     for fset in (truthfulFeatures[0:ll] + truthfulFeatures[ul:NUM_DOC_PER_LABEL] + deceptiveFeatures[0:ll] + deceptiveFeatures[ul:NUM_DOC_PER_LABEL]):
         trainSet.append(fset)
 
-
     classifier = nltk.NaiveBayesClassifier.train(trainSet)
-    acc = nltk.classify.accuracy(classifier, testSet)
-    print "Accuracy for fold %d" % i ,acc
-    sumAcc = sumAcc + acc
+    expectedRes = []
+    predictions = []
+    for test in testSet:
+        pred = classifier.classify(test[0])
+	expectedRes.append(int(test[1]))
+	predictions.append(pred)
+    allStats.append(getStatsArr(predictions, expectedRes))
+    
 
-print "Average accuracy %f" % (sumAcc/NUM_FOLDS)
+printStats(allStats)
+
 whfile = open("info/Hash_" + str(N_IN_NGRAM) + "_Grams.txt", "w");
 srtd = sorted(ngramHash, key=lambda key:  ngramHash[key])
 totdf = 0
@@ -122,6 +125,4 @@ for key in srtd:
     whfile.write(str(ngramHash[key]) + " : " + key + " : " + str(df[key]) + "\n");
     totdf = totdf + df[key]
 whfile.write("Average DF: " + str(totdf/len(df.keys())))
-#avg_df =  reduce(lambda x, y: x + y, df.values()) / len(df.values())
-#print "Average DF: " + str(avg_df)
 

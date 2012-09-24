@@ -4,11 +4,20 @@ import nltk.classify.svm
 import svmlight
 import math
 from nlp_common import *
+posTagHash = {}
 
 def getNGrams(line, n):
+    words = nltk.wordpunct_tokenize(line.strip().lower())
+    if n == 0:
+        tagged_words = nltk.wordpunct_tokenize(line.strip().lower())
+	for word in words:
+	    if word not in posTagHash:
+		posTagHash[word] = nltk.pos_tag([word])[0][1]
+
+        return [posTagHash[word] for word in words]
+
     if n <= 0:
 	return []
-    words = nltk.wordpunct_tokenize(line.strip().lower())
     ngrams = nltk.ngrams(words, n)
     ngramArr = []
     for ngram in ngrams:
@@ -32,11 +41,11 @@ def getFeatureVectors(filename, ngramHash):
        sortedKeys = sorted(subHash, key=lambda key: subHash[key])
        features = []
        for ngramtype in sortedKeys:
-           features.append((str(ngramHash[ngramtype]), str((ufd[ngramtype]/maxFd) * math.log(TOT_NUM_DOCS/df[ngramtype]))))
+           features.append((str(ngramHash[ngramtype]), str((float(ufd[ngramtype])/maxFd) * math.log(TOT_NUM_DOCS/df[ngramtype]))))
        allFeatures.append(features)
   return allFeatures
 
-textDir = "/home/jagat/nlp/hotel-reviews"
+textDir = "hotel-reviews"
 truthfulRevFile = textDir + "/hotel_truthful"
 deceptiveRevFile = textDir + "/hotel_deceptive"
 
@@ -78,7 +87,7 @@ for line in open(deceptiveRevFile):
 trueFeatures = getFeatureVectors(truthfulRevFile, ngramHash)
 deceptiveFeatures = getFeatureVectors(deceptiveRevFile, ngramHash)
 
-for i in range(NUM_DOC_PER_LABEL):
+for i in range(int(NUM_DOC_PER_LABEL)):
     trueRev = trueFeatures[i]
     print "-1",
     for (feat, val) in trueRev:
@@ -98,6 +107,13 @@ for key in srtd:
     whfile.write(str(ngramHash[key]) + " : " + key + " : " + str(df[key]) + "\n");
     totdf = totdf + df[key]
 whfile.write("Average DF: " + str(totdf/len(df.keys())))
+
+if N_IN_NGRAM == 0:
+    whfile = open("info/Hash_" + str(N_IN_NGRAM) + "_POS.txt", "w");
+    #srtd = sorted(posTagHash, key=lambda key:  posTagHash[key])
+    for key in posTagHash:
+        whfile.write(key + " : " + str(posTagHash[key]) +  "\n");
+
 #avg_df =  reduce(lambda x, y: x + y, df.values()) / len(df.values())
 #print "Average DF: " + str(avg_df)
 
