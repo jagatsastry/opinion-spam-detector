@@ -43,7 +43,7 @@ def getLabeledFeatures(filename, label, ngramHash):
        if(maxMaxFd < maxFd):
            maxMaxFd = maxFd
        for ngramtype in sortedKeys:
-           #features[str(ngramHash[ngramtype])] = int( (ufd[ngramtype]/maxFd) * math.log(TOT_NUM_DOCS/df[ngramtype]));
+           #features[str(ngramHash[ngramtype])] =  (float(ufd[ngramtype])/maxFd) * math.log(TOT_NUM_DOCS/df[ngramtype]);
            val = int(ufd[ngramtype] * math.log(TOT_NUM_DOCS/df[ngramtype]));
 	   if val != 0:
                features[ngramtype] =  1

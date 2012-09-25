@@ -1,49 +1,8 @@
 from __future__ import division
 import nltk
-import nltk.classify.svm
-import svmlight
 import math
 from nlp_common import *
 posTagHash = {}
-
-def getNGrams(line, n):
-    words = nltk.wordpunct_tokenize(line.strip().lower())
-    if n == 0:
-        tagged_words = nltk.wordpunct_tokenize(line.strip().lower())
-	for word in words:
-	    if word not in posTagHash:
-		posTagHash[word] = nltk.pos_tag([word])[0][1]
-
-        return [posTagHash[word] for word in words]
-
-    if n <= 0:
-	return []
-    ngrams = nltk.ngrams(words, n)
-    ngramArr = []
-    for ngram in ngrams:
-        ngramStr =  ngram[0]
-        for i in range(n-1):
-            ngramStr = ngramStr + "##" + ngram[i + 1]
-        ngramArr.append(ngramStr)
-    
-    return ngramArr + getNGrams(line, n - 1) 
-
-  
-def getFeatureVectors(filename, ngramHash):
-  allFeatures = []
-  for line in open(filename):
-       ngrams = getNGrams(line, N_IN_NGRAM)
-       ufd = nltk.FreqDist(ngrams);
-       subHash = {} 
-       maxFd = max(ufd.values());
-       for ngram in ufd.keys():
-           subHash[ngram] = ngramHash[ngram]
-       sortedKeys = sorted(subHash, key=lambda key: subHash[key])
-       features = []
-       for ngramtype in sortedKeys:
-           features.append((str(ngramHash[ngramtype]), str((float(ufd[ngramtype])/maxFd) * math.log(TOT_NUM_DOCS/df[ngramtype]))))
-       allFeatures.append(features)
-  return allFeatures
 
 textDir = "hotel-reviews"
 truthfulRevFile = textDir + "/hotel_truthful"
@@ -84,16 +43,17 @@ for line in open(deceptiveRevFile):
           wt[ngram] = True
 
 
-trueFeatures = getFeatureVectors(truthfulRevFile, ngramHash)
-deceptiveFeatures = getFeatureVectors(deceptiveRevFile, ngramHash)
+trueFeatures = getFeatureVectors(truthfulRevFile, ngramHash, df)
+deceptiveFeatures = getFeatureVectors(deceptiveRevFile, ngramHash, df)
 
 for i in range(int(NUM_DOC_PER_LABEL)):
     trueRev = trueFeatures[i]
     print "-1",
     for (feat, val) in trueRev:
         print " " + feat + ":" + val,
-    deceptiveRev = deceptiveFeatures[i]
     print ""
+
+    deceptiveRev = deceptiveFeatures[i]
     print "+1",
     for (feat, val) in deceptiveRev:
         print " " + feat + ":" + val,

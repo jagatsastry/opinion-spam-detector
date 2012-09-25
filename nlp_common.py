@@ -1,4 +1,5 @@
 from __future__ import division
+import nltk
 import sys
 
 NUM_FOLDS=5
@@ -51,8 +52,12 @@ def getStatsArr(predictions, exp=[]):
             tp = tp + 1
         idx = idx + 1
 
+    return getScores(tn, fn, tp, fp) + [tn, fn, tp, fp]
+    
+def getScores(tn, fn, tp, fp):
     #print "FP: ",fp," TP: ",tp," FN: ",fn," TN: ",tn
-    accuracy = 100 * (tp + tn)/idx
+    tot = tn + fn + tp + fp
+    accuracy = 100 * (tp + tn)/tot
     precision = 100 * tp / (tp + fp)
     negPrecision = 100 * tn / (tn + fn)
     recall = 100 * tp / (tp + fn)
@@ -61,7 +66,8 @@ def getStatsArr(predictions, exp=[]):
     negFscore = (2*negPrecision*negRecall)/(negPrecision + negRecall)
 
     return [accuracy, precision, recall, fscore, negPrecision, negRecall, negFscore]
-    
+
+
 
 import math
 from math import floor
@@ -81,26 +87,71 @@ def printStats(allStats):
     
     i = 0
 
+    tn = 0
+    fn = 0
+    tp = 0
+    fp = 0
     for stats in allStats:
 
         print "Fold ",i,":    Accuracy: %3.2f%%" % (stats[0])
         print "   Deceptive  --  P: %3.2f%%  R: %3.2f%% F: %3.2f%%" % (stats[1], stats[2],stats[3])
         print "   Truth      --  P: %3.2f%%  R: %3.2f%% F: %3.2f%%" % (stats[4], stats[5],stats[6])
-        accuracy = accuracy + stats[0]
-        precision = precision + stats[1]
-        recall = recall + stats[2]
-        fscore = fscore + stats[3]
-        negPrecision = negPrecision + stats[4]
-        negRecall = negRecall + stats[5]
-        negFscore = negFscore + stats[6]
+	tn = tn + stats[7]
+	fn = fn + stats[8]
+	tp = tp + stats[9]
+	fp = fp + stats[10]
+
 	i = i + 1
+
+    avgStats = getScores(tn, fn, tp, fp)
 
     print
     print "--------------------"
     print "       Average      "
     print "--------------------"
-    print "   Accuracy:  %3.2f%%" % (accuracy/NUM_FOLDS)
-    print "   Precision: Deceptive %3.2f%%  True %3.2f%%" % (precision/NUM_FOLDS, negPrecision/NUM_FOLDS)
-    print "   Recall:    Deceptive %3.2f%%  True %3.2f%%" % (recall/NUM_FOLDS, negRecall/NUM_FOLDS)
-    print "   F-Score:   Deceptive %3.2f%%  True %3.2f%%" % (fscore/NUM_FOLDS, negFscore/NUM_FOLDS)
+    print "   Accuracy:  %3.2f%%" % (avgStats[0])
+    print "   Precision: Deceptive %3.2f%%  True %3.2f%%" % (avgStats[1], avgStats[4])
+    print "   Recall:    Deceptive %3.2f%%  True %3.2f%%" % (avgStats[2], avgStats[5])
+    print "   F-Score:   Deceptive %3.2f%%  True %3.2f%%" % (avgStats[3], avgStats[6])
     print "--------------------"   
+
+def getNGrams(line, n):
+    words = nltk.wordpunct_tokenize(line.strip().lower())
+    if CLASSIFIER_TYPE is "POS":
+    #if N_IN_NGRAM == 1:
+        tagged_words = nltk.wordpunct_tokenize(line.strip().lower())
+        for word in words:
+            if word not in posTagHash:
+                posTagHash[word] = nltk.pos_tag([word])[0][1]
+
+        return [posTagHash[word] for word in words]
+
+    if n <= 0:
+        return []
+    ngrams = nltk.ngrams(words, n)
+    ngramArr = []
+    for ngram in ngrams:
+        ngramStr =  ngram[0]
+        for i in range(n-1):
+            ngramStr = ngramStr + "##" + ngram[i + 1]
+        ngramArr.append(ngramStr)
+
+    return ngramArr + getNGrams(line, n - 1)
+
+
+def getFeatureVectors(filename, ngramHash, docFreq):
+  allFeatures = []
+  for line in open(filename):
+       ngrams = getNGrams(line, N_IN_NGRAM)
+       ufd = nltk.FreqDist(ngrams);
+       subHash = {}
+       maxFd = max(ufd.values());
+       for ngram in ufd.keys():
+           subHash[ngram] = ngramHash[ngram]
+       sortedKeys = sorted(subHash, key=lambda key: subHash[key])
+       features = []
+       for ngramtype in sortedKeys:
+           features.append((str(ngramHash[ngramtype]), str((ufd[ngramtype]/maxFd) * math.log(TOT_NUM_DOCS/docFreq[ngramtype]))))
+       allFeatures.append(features)
+  return allFeatures
+                      

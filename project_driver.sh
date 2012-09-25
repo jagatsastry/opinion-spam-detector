@@ -1,6 +1,12 @@
 #!/bin/bash
 #Jagat Sastry P
 #9/17/2012
+mkdir -p info
+mkdir -p feature_vectors
+mkdir -p svm_in_out/nest_0 svm_in_out/nest_1 svm_in_out/nest_2 svm_in_out/nest_3 svm_in_out/nest_4 svm_in_out/nest_5
+
+mkdir -p test_review_files/nest_0 test_review_files/nest_1 test_review_files/nest_2 test_review_files/nest_3 test_review_files/nest_4 test_review_files/nest_5
+
 ngram=$1
 if [ "$ngram" = "" ] ; then
     ngram=1
