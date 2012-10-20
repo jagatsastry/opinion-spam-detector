@@ -109,14 +109,14 @@ Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Setting default regularization parameter C=0.0196
 Optimizing.................................................................................................................................................done. (146 iterations)
 Optimization finished (1 misclassified, maxdiff=0.00089).
-Runtime in cpu-seconds: 0.04
+Runtime in cpu-seconds: 0.05
 Number of SV: 499 (including 173 at upper bound)
 L1 loss: loss=46.34600
 Norm of weight vector: |w|=2.42289
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=1898.11999
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
 XiAlpha-estimate of the error: error<=91.99% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>7.03% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>7.17% (rho=1.00,depth=0)
@@ -143,7 +143,7 @@ Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Setting default regularization parameter C=0.0193
 Optimizing.........................................................................................................................................................done. (154 iterations)
 Optimization finished (1 misclassified, maxdiff=0.00091).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.04
 Number of SV: 500 (including 178 at upper bound)
 L1 loss: loss=48.15023
 Norm of weight vector: |w|=2.39534
@@ -243,7 +243,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.............................................................................................................................................................................................done. (190 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00086).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.88925
@@ -343,7 +343,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing............................................................................................................................................................................................done. (189 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00083).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 499 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91818
@@ -575,14 +575,14 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.............................................................................................................................................................................................done. (190 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00086).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.88925
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=2698.72845
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
 XiAlpha-estimate of the error: error<=89.84% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>10.16% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>10.16% (rho=1.00,depth=0)
@@ -608,7 +608,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................................done. (199 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91462
@@ -874,7 +874,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..................................................................................................................................................................................................done. (195 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00092).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 490 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.88572
@@ -907,7 +907,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.............................................................................................................................................................................................done. (190 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00086).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.88925
@@ -940,7 +940,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................................done. (199 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91462
@@ -973,14 +973,14 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing............................................................................................................................................................................................done. (189 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00096).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 499 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.90336
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=2725.13372
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
 XiAlpha-estimate of the error: error<=89.84% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>9.77% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>9.84% (rho=1.00,depth=0)
@@ -1173,7 +1173,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing............................................................................................................................................................................................done. (189 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00083).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 499 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91818
@@ -1239,7 +1239,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.............................................................................................................................................................................................done. (190 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00086).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.88925
@@ -1272,7 +1272,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................................done. (199 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91462
@@ -1312,7 +1312,7 @@ Norm of weight vector: |w|=2.90336
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=2725.13372
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
 XiAlpha-estimate of the error: error<=89.84% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>9.77% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>9.84% (rho=1.00,depth=0)
@@ -1571,7 +1571,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.............................................................................................................................................................................................done. (190 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00086).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.88925
@@ -1604,7 +1604,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................................done. (199 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91462
@@ -1770,7 +1770,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................................done. (199 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 0.07
+Runtime in cpu-seconds: 0.06
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91462
@@ -1803,7 +1803,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing............................................................................................................................................................................................done. (189 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00096).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 499 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.90336
@@ -1910,7 +1910,7 @@ Norm of weight vector: |w|=2.88925
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=2698.72845
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
 XiAlpha-estimate of the error: error<=89.84% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>10.16% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>10.16% (rho=1.00,depth=0)
@@ -1936,7 +1936,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................................done. (199 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91462
@@ -1969,7 +1969,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing............................................................................................................................................................................................done. (189 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00096).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 499 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.90336
@@ -2069,7 +2069,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.............................................................................................................................................................................................done. (190 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00086).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.88925
@@ -2235,7 +2235,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.............................................................................................................................................................................................done. (190 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00086).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.88925
@@ -2268,7 +2268,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................................done. (199 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 0.07
+Runtime in cpu-seconds: 0.06
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91462
@@ -2301,7 +2301,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing............................................................................................................................................................................................done. (189 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00096).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 499 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.90336
@@ -2434,7 +2434,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................................done. (199 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91462
@@ -2578,7 +2578,7 @@ Norm of weight vector: |w|=2.45391
 Norm of longest example vector: |x|=14.57830
 Estimated VCdim of classifier: VCdim<=1280.76882
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
 XiAlpha-estimate of the error: error<=88.48% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>12.89% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>12.55% (rho=1.00,depth=0)
@@ -2605,7 +2605,7 @@ Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Setting default regularization parameter C=0.0200
 Optimizing..........................................................................................................................................done. (139 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.03
+Runtime in cpu-seconds: 0.04
 Number of SV: 502 (including 173 at upper bound)
 L1 loss: loss=49.80316
 Norm of weight vector: |w|=2.42856
@@ -2706,7 +2706,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.......................................................................................................................................................................................done. (184 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92114
@@ -2739,7 +2739,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.93746
@@ -2812,7 +2812,7 @@ Norm of weight vector: |w|=2.95128
 Norm of longest example vector: |x|=15.34478
 Estimated VCdim of classifier: VCdim<=2051.88826
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
 XiAlpha-estimate of the error: error<=87.70% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>14.84% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>14.13% (rho=1.00,depth=0)
@@ -2839,7 +2839,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................................done. (196 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 499 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92661
@@ -2872,7 +2872,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.......................................................................................................................................................................................done. (184 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92114
@@ -2905,7 +2905,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.93746
@@ -3012,7 +3012,7 @@ Norm of weight vector: |w|=2.92661
 Norm of longest example vector: |x|=15.34478
 Estimated VCdim of classifier: VCdim<=2017.74985
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
 XiAlpha-estimate of the error: error<=87.30% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>15.62% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>14.76% (rho=1.00,depth=0)
@@ -3071,7 +3071,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.93746
@@ -3104,7 +3104,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing................................................................................................................................................................................................done. (193 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96131
@@ -3204,7 +3204,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.......................................................................................................................................................................................done. (184 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92114
@@ -3237,7 +3237,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.93746
@@ -3270,7 +3270,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing................................................................................................................................................................................................done. (193 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96131
@@ -3310,7 +3310,7 @@ Norm of weight vector: |w|=2.95128
 Norm of longest example vector: |x|=15.34478
 Estimated VCdim of classifier: VCdim<=2051.88826
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
 XiAlpha-estimate of the error: error<=87.70% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>14.84% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>14.13% (rho=1.00,depth=0)
@@ -3370,7 +3370,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.......................................................................................................................................................................................done. (184 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92114
@@ -3403,7 +3403,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.93746
@@ -3436,7 +3436,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing................................................................................................................................................................................................done. (193 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96131
@@ -3496,6 +3496,172 @@ Precision/recall on test set: 94.92%/87.50%
 *********END OF TEST 1*************
 
 For fold 1, for c value 0.500000, accuracy is 89.062500
+
+********TRAINING SVM FOR TEST: 0*****************
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
+Optimizing...................................................................................................................................................................................................done. (196 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00094).
+Runtime in cpu-seconds: 0.06
+Number of SV: 499 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=2.92661
+Norm of longest example vector: |x|=15.34478
+Estimated VCdim of classifier: VCdim<=2017.74985
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=87.30% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>15.62% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>14.76% (rho=1.00,depth=0)
+Number of kernel evaluations: 17342
+Writing model file...done
+
+
+********CLASSIFYING TEST CASE: 0**********************
+
+Reading model...OK. (499 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.00
+Accuracy on test set: 86.72% (111 correct, 17 incorrect, 128 total)
+Precision/recall on test set: 85.07%/89.06%
+
+
+*********END OF TEST 1*************
+
+
+********TRAINING SVM FOR TEST: 1*****************
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
+Optimizing.......................................................................................................................................................................................done. (184 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00098).
+Runtime in cpu-seconds: 0.05
+Number of SV: 495 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=2.92114
+Norm of longest example vector: |x|=15.34478
+Estimated VCdim of classifier: VCdim<=1814.50780
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+XiAlpha-estimate of the error: error<=86.33% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>16.02% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>15.30% (rho=1.00,depth=0)
+Number of kernel evaluations: 16670
+Writing model file...done
+
+
+********CLASSIFYING TEST CASE: 1**********************
+
+Reading model...OK. (495 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.00
+Accuracy on test set: 86.72% (111 correct, 17 incorrect, 128 total)
+Precision/recall on test set: 91.23%/81.25%
+
+
+*********END OF TEST 1*************
+
+
+********TRAINING SVM FOR TEST: 2*****************
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
+Optimizing.........................................................................................................................................................................................done. (186 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00094).
+Runtime in cpu-seconds: 0.06
+Number of SV: 500 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=2.93746
+Norm of longest example vector: |x|=14.57830
+Estimated VCdim of classifier: VCdim<=1834.82473
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=86.13% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>16.41% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>15.61% (rho=1.00,depth=0)
+Number of kernel evaluations: 16795
+Writing model file...done
+
+
+********CLASSIFYING TEST CASE: 2**********************
+
+Reading model...OK. (500 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.00
+Accuracy on test set: 90.62% (116 correct, 12 incorrect, 128 total)
+Precision/recall on test set: 87.14%/95.31%
+
+
+*********END OF TEST 1*************
+
+
+********TRAINING SVM FOR TEST: 3*****************
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
+Optimizing................................................................................................................................................................................................done. (193 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00098).
+Runtime in cpu-seconds: 0.06
+Number of SV: 496 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=2.96131
+Norm of longest example vector: |x|=15.34478
+Estimated VCdim of classifier: VCdim<=2065.85823
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=87.50% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>14.45% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>13.91% (rho=1.00,depth=0)
+Number of kernel evaluations: 17168
+Writing model file...done
+
+
+********CLASSIFYING TEST CASE: 3**********************
+
+Reading model...OK. (496 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.00
+Accuracy on test set: 89.84% (115 correct, 13 incorrect, 128 total)
+Precision/recall on test set: 90.48%/89.06%
+
+
+*********END OF TEST 1*************
+
+
+********TRAINING SVM FOR TEST: 4*****************
+
+Scanning examples...done
+Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
+Optimizing....................................................................................................................................................................................................done. (197 iterations)
+Optimization finished (0 misclassified, maxdiff=0.00095).
+Runtime in cpu-seconds: 0.06
+Number of SV: 501 (including 0 at upper bound)
+L1 loss: loss=0.00000
+Norm of weight vector: |w|=2.95128
+Norm of longest example vector: |x|=15.34478
+Estimated VCdim of classifier: VCdim<=2051.88826
+Computing XiAlpha-estimates...done
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+XiAlpha-estimate of the error: error<=87.70% (rho=1.00,depth=0)
+XiAlpha-estimate of the recall: recall=>14.84% (rho=1.00,depth=0)
+XiAlpha-estimate of the precision: precision=>14.13% (rho=1.00,depth=0)
+Number of kernel evaluations: 17403
+Writing model file...done
+
+
+********CLASSIFYING TEST CASE: 4**********************
+
+Reading model...OK. (501 support vectors read)
+Classifying test examples..100..done
+Runtime (without IO) in cpu-seconds: 0.00
+Accuracy on test set: 91.41% (117 correct, 11 incorrect, 128 total)
+Precision/recall on test set: 94.92%/87.50%
+
+
+*********END OF TEST 1*************
+
+For fold 1, for c value 0.600000, accuracy is 89.062500
 
 ********TRAINING SVM FOR TEST: 0*****************
 
@@ -3635,173 +3801,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing....................................................................................................................................................................................................done. (197 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00095).
-Runtime in cpu-seconds: 0.06
-Number of SV: 501 (including 0 at upper bound)
-L1 loss: loss=0.00000
-Norm of weight vector: |w|=2.95128
-Norm of longest example vector: |x|=15.34478
-Estimated VCdim of classifier: VCdim<=2051.88826
-Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
-XiAlpha-estimate of the error: error<=87.70% (rho=1.00,depth=0)
-XiAlpha-estimate of the recall: recall=>14.84% (rho=1.00,depth=0)
-XiAlpha-estimate of the precision: precision=>14.13% (rho=1.00,depth=0)
-Number of kernel evaluations: 17403
-Writing model file...done
-
-
-********CLASSIFYING TEST CASE: 4**********************
-
-Reading model...OK. (501 support vectors read)
-Classifying test examples..100..done
-Runtime (without IO) in cpu-seconds: 0.00
-Accuracy on test set: 91.41% (117 correct, 11 incorrect, 128 total)
-Precision/recall on test set: 94.92%/87.50%
-
-
-*********END OF TEST 1*************
-
-For fold 1, for c value 0.600000, accuracy is 89.062500
-
-********TRAINING SVM FOR TEST: 0*****************
-
-Scanning examples...done
-Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
-Optimizing...................................................................................................................................................................................................done. (196 iterations)
-Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.06
-Number of SV: 499 (including 0 at upper bound)
-L1 loss: loss=0.00000
-Norm of weight vector: |w|=2.92661
-Norm of longest example vector: |x|=15.34478
-Estimated VCdim of classifier: VCdim<=2017.74985
-Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
-XiAlpha-estimate of the error: error<=87.30% (rho=1.00,depth=0)
-XiAlpha-estimate of the recall: recall=>15.62% (rho=1.00,depth=0)
-XiAlpha-estimate of the precision: precision=>14.76% (rho=1.00,depth=0)
-Number of kernel evaluations: 17342
-Writing model file...done
-
-
-********CLASSIFYING TEST CASE: 0**********************
-
-Reading model...OK. (499 support vectors read)
-Classifying test examples..100..done
-Runtime (without IO) in cpu-seconds: 0.00
-Accuracy on test set: 86.72% (111 correct, 17 incorrect, 128 total)
-Precision/recall on test set: 85.07%/89.06%
-
-
-*********END OF TEST 1*************
-
-
-********TRAINING SVM FOR TEST: 1*****************
-
-Scanning examples...done
-Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
-Optimizing.......................................................................................................................................................................................done. (184 iterations)
-Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
-Number of SV: 495 (including 0 at upper bound)
-L1 loss: loss=0.00000
-Norm of weight vector: |w|=2.92114
-Norm of longest example vector: |x|=15.34478
-Estimated VCdim of classifier: VCdim<=1814.50780
-Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
-XiAlpha-estimate of the error: error<=86.33% (rho=1.00,depth=0)
-XiAlpha-estimate of the recall: recall=>16.02% (rho=1.00,depth=0)
-XiAlpha-estimate of the precision: precision=>15.30% (rho=1.00,depth=0)
-Number of kernel evaluations: 16670
-Writing model file...done
-
-
-********CLASSIFYING TEST CASE: 1**********************
-
-Reading model...OK. (495 support vectors read)
-Classifying test examples..100..done
-Runtime (without IO) in cpu-seconds: 0.00
-Accuracy on test set: 86.72% (111 correct, 17 incorrect, 128 total)
-Precision/recall on test set: 91.23%/81.25%
-
-
-*********END OF TEST 1*************
-
-
-********TRAINING SVM FOR TEST: 2*****************
-
-Scanning examples...done
-Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
-Optimizing.........................................................................................................................................................................................done. (186 iterations)
-Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.05
-Number of SV: 500 (including 0 at upper bound)
-L1 loss: loss=0.00000
-Norm of weight vector: |w|=2.93746
-Norm of longest example vector: |x|=14.57830
-Estimated VCdim of classifier: VCdim<=1834.82473
-Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
-XiAlpha-estimate of the error: error<=86.13% (rho=1.00,depth=0)
-XiAlpha-estimate of the recall: recall=>16.41% (rho=1.00,depth=0)
-XiAlpha-estimate of the precision: precision=>15.61% (rho=1.00,depth=0)
-Number of kernel evaluations: 16795
-Writing model file...done
-
-
-********CLASSIFYING TEST CASE: 2**********************
-
-Reading model...OK. (500 support vectors read)
-Classifying test examples..100..done
-Runtime (without IO) in cpu-seconds: 0.00
-Accuracy on test set: 90.62% (116 correct, 12 incorrect, 128 total)
-Precision/recall on test set: 87.14%/95.31%
-
-
-*********END OF TEST 1*************
-
-
-********TRAINING SVM FOR TEST: 3*****************
-
-Scanning examples...done
-Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
-Optimizing................................................................................................................................................................................................done. (193 iterations)
-Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
-Number of SV: 496 (including 0 at upper bound)
-L1 loss: loss=0.00000
-Norm of weight vector: |w|=2.96131
-Norm of longest example vector: |x|=15.34478
-Estimated VCdim of classifier: VCdim<=2065.85823
-Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
-XiAlpha-estimate of the error: error<=87.50% (rho=1.00,depth=0)
-XiAlpha-estimate of the recall: recall=>14.45% (rho=1.00,depth=0)
-XiAlpha-estimate of the precision: precision=>13.91% (rho=1.00,depth=0)
-Number of kernel evaluations: 17168
-Writing model file...done
-
-
-********CLASSIFYING TEST CASE: 3**********************
-
-Reading model...OK. (496 support vectors read)
-Classifying test examples..100..done
-Runtime (without IO) in cpu-seconds: 0.00
-Accuracy on test set: 89.84% (115 correct, 13 incorrect, 128 total)
-Precision/recall on test set: 90.48%/89.06%
-
-
-*********END OF TEST 1*************
-
-
-********TRAINING SVM FOR TEST: 4*****************
-
-Scanning examples...done
-Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
-Optimizing....................................................................................................................................................................................................done. (197 iterations)
-Optimization finished (0 misclassified, maxdiff=0.00095).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.95128
@@ -3835,7 +3835,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................................done. (196 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 499 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92661
@@ -3868,7 +3868,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.......................................................................................................................................................................................done. (184 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92114
@@ -4034,7 +4034,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.......................................................................................................................................................................................done. (184 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92114
@@ -4067,7 +4067,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.93746
@@ -4100,7 +4100,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing................................................................................................................................................................................................done. (193 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96131
@@ -4233,7 +4233,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.93746
@@ -4499,7 +4499,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................................done. (196 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.07
+Runtime in cpu-seconds: 0.06
 Number of SV: 499 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92661
@@ -4532,7 +4532,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.......................................................................................................................................................................................done. (184 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92114
@@ -4605,7 +4605,7 @@ Norm of weight vector: |w|=2.96131
 Norm of longest example vector: |x|=15.34478
 Estimated VCdim of classifier: VCdim<=2065.85823
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
 XiAlpha-estimate of the error: error<=87.50% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>14.45% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>13.91% (rho=1.00,depth=0)
@@ -4631,7 +4631,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing....................................................................................................................................................................................................done. (197 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00095).
-Runtime in cpu-seconds: 0.07
+Runtime in cpu-seconds: 0.06
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.95128
@@ -4698,7 +4698,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.......................................................................................................................................................................................done. (184 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92114
@@ -4731,7 +4731,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.93746
@@ -4797,7 +4797,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing....................................................................................................................................................................................................done. (197 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00095).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.95128
@@ -4831,7 +4831,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................................done. (196 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 499 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92661
@@ -4864,7 +4864,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.......................................................................................................................................................................................done. (184 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92114
@@ -4897,7 +4897,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.93746
@@ -4999,7 +4999,7 @@ Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Setting default regularization parameter C=0.0191
 Optimizing...................................................................................................................................................done. (148 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00082).
-Runtime in cpu-seconds: 0.04
+Runtime in cpu-seconds: 0.05
 Number of SV: 503 (including 174 at upper bound)
 L1 loss: loss=46.30203
 Norm of weight vector: |w|=2.41424
@@ -5169,7 +5169,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00087).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89811
@@ -5202,7 +5202,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing................................................................................................................................................................................................done. (193 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91164
@@ -5268,7 +5268,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................................done. (196 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94305
@@ -5335,7 +5335,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00087).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89811
@@ -5368,7 +5368,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing................................................................................................................................................................................................done. (193 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91164
@@ -5401,7 +5401,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................done. (183 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.07
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92490
@@ -5467,7 +5467,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00090).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92550
@@ -5501,7 +5501,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00087).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89811
@@ -5553,7 +5553,7 @@ Writing model file...done
 
 Reading model...OK. (497 support vectors read)
 Classifying test examples..100..done
-Runtime (without IO) in cpu-seconds: 0.00
+Runtime (without IO) in cpu-seconds: 0.01
 Accuracy on test set: 85.16% (109 correct, 19 incorrect, 128 total)
 Precision/recall on test set: 86.89%/82.81%
 
@@ -5567,7 +5567,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................done. (183 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.07
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92490
@@ -5600,7 +5600,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................................done. (196 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94305
@@ -5733,7 +5733,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................done. (183 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.04
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92490
@@ -5766,7 +5766,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................................done. (196 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94305
@@ -5866,7 +5866,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing................................................................................................................................................................................................done. (193 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.07
+Runtime in cpu-seconds: 0.06
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91164
@@ -5932,14 +5932,14 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................................done. (196 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94305
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=2800.11326
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
 XiAlpha-estimate of the error: error<=89.45% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>11.72% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>11.45% (rho=1.00,depth=0)
@@ -5965,14 +5965,14 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00090).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92550
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=2766.84745
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
 XiAlpha-estimate of the error: error<=91.80% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>9.38% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>9.16% (rho=1.00,depth=0)
@@ -6032,7 +6032,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing................................................................................................................................................................................................done. (193 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91164
@@ -6131,7 +6131,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00090).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92550
@@ -6165,7 +6165,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00087).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89811
@@ -6231,7 +6231,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................done. (183 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92490
@@ -6264,7 +6264,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................................done. (196 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94305
@@ -6297,7 +6297,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00090).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92550
@@ -6397,7 +6397,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................done. (183 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92490
@@ -6430,7 +6430,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................................done. (196 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94305
@@ -6497,7 +6497,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00087).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89811
@@ -6563,7 +6563,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................done. (183 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92490
@@ -6596,7 +6596,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................................done. (196 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94305
@@ -6629,7 +6629,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00090).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92550
@@ -6663,7 +6663,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00087).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89811
@@ -6795,7 +6795,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00090).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92550
@@ -6895,7 +6895,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................done. (183 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92490
@@ -6961,7 +6961,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00090).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92550
@@ -6995,7 +6995,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00087).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89811
@@ -7061,14 +7061,14 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................done. (183 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92490
 Norm of longest example vector: |x|=16.51376
 Estimated VCdim of classifier: VCdim<=1917.18309
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
 XiAlpha-estimate of the error: error<=89.45% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>13.28% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>12.59% (rho=1.00,depth=0)
@@ -7161,7 +7161,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00087).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89811
@@ -7227,7 +7227,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................done. (183 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92490
@@ -7260,7 +7260,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................................done. (196 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00094).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94305
@@ -7293,7 +7293,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00090).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92550
@@ -7327,7 +7327,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.........................................................................................................................................................................................done. (186 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00087).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89811
@@ -7360,7 +7360,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing................................................................................................................................................................................................done. (193 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 497 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91164
@@ -7393,14 +7393,14 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing......................................................................................................................................................................................done. (183 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92490
 Norm of longest example vector: |x|=16.51376
 Estimated VCdim of classifier: VCdim<=1917.18309
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
 XiAlpha-estimate of the error: error<=89.45% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>13.28% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>12.59% (rho=1.00,depth=0)
@@ -7459,7 +7459,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00090).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.92550
@@ -7631,7 +7631,7 @@ Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Setting default regularization parameter C=0.0196
 Optimizing...................................................................................................................................................done. (148 iterations)
 Optimization finished (1 misclassified, maxdiff=0.00092).
-Runtime in cpu-seconds: 0.04
+Runtime in cpu-seconds: 0.03
 Number of SV: 500 (including 175 at upper bound)
 L1 loss: loss=48.57790
 Norm of weight vector: |w|=2.40939
@@ -7764,7 +7764,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing........................................................................................................................................................................................done. (185 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94619
@@ -7831,7 +7831,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..................................................................................................................................................................................................done. (195 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00091).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.87822
@@ -7864,7 +7864,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..........................................................................................................................................................................................done. (187 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.90581
@@ -7897,7 +7897,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................done. (180 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 492 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89517
@@ -7963,7 +7963,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..........................................................................................................................................................................................done. (187 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 493 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91472
@@ -8063,7 +8063,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................done. (180 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 492 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89517
@@ -8129,7 +8129,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..........................................................................................................................................................................................done. (187 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.08
+Runtime in cpu-seconds: 0.06
 Number of SV: 493 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91472
@@ -8163,7 +8163,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..................................................................................................................................................................................................done. (195 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00091).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.87822
@@ -8229,7 +8229,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................done. (180 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 492 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89517
@@ -8262,14 +8262,14 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing........................................................................................................................................................................................done. (185 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94619
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=2806.09989
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
 XiAlpha-estimate of the error: error<=91.41% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>10.16% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>9.85% (rho=1.00,depth=0)
@@ -8402,7 +8402,7 @@ Norm of weight vector: |w|=2.89517
 Norm of longest example vector: |x|=16.51376
 Estimated VCdim of classifier: VCdim<=1878.43145
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
 XiAlpha-estimate of the error: error<=89.06% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>13.28% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>12.69% (rho=1.00,depth=0)
@@ -8528,7 +8528,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..........................................................................................................................................................................................done. (187 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.90581
@@ -8561,7 +8561,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................done. (180 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 492 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89517
@@ -8661,7 +8661,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..................................................................................................................................................................................................done. (195 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00091).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.87822
@@ -8727,7 +8727,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................done. (180 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 492 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89517
@@ -8760,7 +8760,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing........................................................................................................................................................................................done. (185 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94619
@@ -8834,7 +8834,7 @@ Norm of weight vector: |w|=2.87822
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=2678.16863
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
 XiAlpha-estimate of the error: error<=90.62% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>10.94% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>10.61% (rho=1.00,depth=0)
@@ -8926,7 +8926,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing........................................................................................................................................................................................done. (185 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94619
@@ -8959,7 +8959,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..........................................................................................................................................................................................done. (187 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 493 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91472
@@ -8993,7 +8993,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..................................................................................................................................................................................................done. (195 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00091).
-Runtime in cpu-seconds: 0.07
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.87822
@@ -9059,7 +9059,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................done. (180 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.07
+Runtime in cpu-seconds: 0.05
 Number of SV: 492 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89517
@@ -9192,7 +9192,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..........................................................................................................................................................................................done. (187 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.90581
@@ -9225,7 +9225,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................done. (180 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 492 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89517
@@ -9291,7 +9291,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..........................................................................................................................................................................................done. (187 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 493 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.91472
@@ -9358,7 +9358,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..........................................................................................................................................................................................done. (187 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.90581
@@ -9391,7 +9391,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................done. (180 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 492 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89517
@@ -9491,7 +9491,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..................................................................................................................................................................................................done. (195 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00091).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.87822
@@ -9524,7 +9524,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..........................................................................................................................................................................................done. (187 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.90581
@@ -9557,7 +9557,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................done. (180 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 492 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89517
@@ -9642,7 +9642,7 @@ Writing model file...done
 
 Reading model...OK. (493 support vectors read)
 Classifying test examples..100..done
-Runtime (without IO) in cpu-seconds: 0.00
+Runtime (without IO) in cpu-seconds: 0.01
 Accuracy on test set: 92.19% (118 correct, 10 incorrect, 128 total)
 Precision/recall on test set: 96.55%/87.50%
 
@@ -9657,7 +9657,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..................................................................................................................................................................................................done. (195 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00091).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.87822
@@ -9723,7 +9723,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................done. (180 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 492 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89517
@@ -9756,7 +9756,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing........................................................................................................................................................................................done. (185 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00097).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 495 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94619
@@ -9823,7 +9823,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..................................................................................................................................................................................................done. (195 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00091).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.07
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.87822
@@ -9889,7 +9889,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...................................................................................................................................................................................done. (180 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 492 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.89517
@@ -10093,7 +10093,7 @@ Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Setting default regularization parameter C=0.0195
 Optimizing............................................................................................................................................done. (141 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00083).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.04
 Number of SV: 505 (including 184 at upper bound)
 L1 loss: loss=50.32530
 Norm of weight vector: |w|=2.44575
@@ -10194,7 +10194,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00092).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 499 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96616
@@ -10260,7 +10260,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00093).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96140
@@ -10426,7 +10426,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00093).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96140
@@ -10459,7 +10459,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.....................................................................................................................................................................................done. (182 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94604
@@ -10592,7 +10592,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00093).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96140
@@ -10625,7 +10625,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.....................................................................................................................................................................................done. (182 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94604
@@ -10725,7 +10725,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..............................................................................................................................................................................................done. (191 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.95808
@@ -10758,7 +10758,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00093).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96140
@@ -10825,7 +10825,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..............................................................................................................................................................................................done. (191 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00099).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.93911
@@ -10924,14 +10924,14 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00093).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96140
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=2835.12940
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
 XiAlpha-estimate of the error: error<=92.19% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>8.98% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>8.78% (rho=1.00,depth=0)
@@ -10957,7 +10957,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.....................................................................................................................................................................................done. (182 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94604
@@ -11057,7 +11057,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..............................................................................................................................................................................................done. (191 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.95808
@@ -11090,7 +11090,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00093).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96140
@@ -11123,7 +11123,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.....................................................................................................................................................................................done. (182 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94604
@@ -11223,7 +11223,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..............................................................................................................................................................................................done. (191 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.95808
@@ -11256,7 +11256,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00093).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96140
@@ -11289,7 +11289,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.....................................................................................................................................................................................done. (182 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94604
@@ -11363,7 +11363,7 @@ Norm of weight vector: |w|=2.96616
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=2844.26168
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
 XiAlpha-estimate of the error: error<=90.43% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>10.55% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>10.34% (rho=1.00,depth=0)
@@ -11389,7 +11389,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..............................................................................................................................................................................................done. (191 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.95808
@@ -11422,7 +11422,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00093).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96140
@@ -11455,14 +11455,14 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.....................................................................................................................................................................................done. (182 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94604
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=2805.81765
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
 XiAlpha-estimate of the error: error<=90.82% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>10.16% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>9.96% (rho=1.00,depth=0)
@@ -11489,7 +11489,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..............................................................................................................................................................................................done. (191 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00099).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.93911
@@ -11555,7 +11555,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..............................................................................................................................................................................................done. (191 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.95808
@@ -11588,7 +11588,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00093).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96140
@@ -11621,7 +11621,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.....................................................................................................................................................................................done. (182 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94604
@@ -11640,7 +11640,7 @@ Writing model file...done
 
 Reading model...OK. (494 support vectors read)
 Classifying test examples..100..done
-Runtime (without IO) in cpu-seconds: 0.00
+Runtime (without IO) in cpu-seconds: 0.01
 Accuracy on test set: 90.62% (116 correct, 12 incorrect, 128 total)
 Precision/recall on test set: 94.83%/85.94%
 
@@ -11655,7 +11655,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..............................................................................................................................................................................................done. (191 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00099).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.93911
@@ -11721,14 +11721,14 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..............................................................................................................................................................................................done. (191 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.95808
 Norm of longest example vector: |x|=16.51376
 Estimated VCdim of classifier: VCdim<=2061.35233
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
 XiAlpha-estimate of the error: error<=90.43% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>12.89% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>12.09% (rho=1.00,depth=0)
@@ -11754,7 +11754,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00093).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96140
@@ -11953,7 +11953,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.....................................................................................................................................................................................done. (182 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94604
@@ -11994,7 +11994,7 @@ Norm of weight vector: |w|=2.93911
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=2792.62551
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.01
+Runtime for XiAlpha-estimates in cpu-seconds: 0.00
 XiAlpha-estimate of the error: error<=90.23% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>10.55% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>10.38% (rho=1.00,depth=0)
@@ -12027,7 +12027,7 @@ Norm of weight vector: |w|=2.96616
 Norm of longest example vector: |x|=17.97684
 Estimated VCdim of classifier: VCdim<=2844.26168
 Computing XiAlpha-estimates...done
-Runtime for XiAlpha-estimates in cpu-seconds: 0.00
+Runtime for XiAlpha-estimates in cpu-seconds: 0.01
 XiAlpha-estimate of the error: error<=90.43% (rho=1.00,depth=0)
 XiAlpha-estimate of the recall: recall=>10.55% (rho=1.00,depth=0)
 XiAlpha-estimate of the precision: precision=>10.34% (rho=1.00,depth=0)
@@ -12053,7 +12053,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..............................................................................................................................................................................................done. (191 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00100).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 500 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.95808
@@ -12119,7 +12119,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.....................................................................................................................................................................................done. (182 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94604
@@ -12153,7 +12153,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing..............................................................................................................................................................................................done. (191 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00099).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 496 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.93911
@@ -12352,7 +12352,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00092).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 499 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96616
@@ -12418,7 +12418,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing...............................................................................................................................................................................................done. (192 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00093).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 501 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.96140
@@ -12451,7 +12451,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..OK. (512 examples read)
 Optimizing.....................................................................................................................................................................................done. (182 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00098).
-Runtime in cpu-seconds: 0.06
+Runtime in cpu-seconds: 0.05
 Number of SV: 494 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=2.94604
@@ -12507,7 +12507,7 @@ Writing model file...done
 
 Reading model...OK. (606 support vectors read)
 Classifying test examples..100..done
-Runtime (without IO) in cpu-seconds: 0.01
+Runtime (without IO) in cpu-seconds: 0.00
 Accuracy on test set: 87.50% (140 correct, 20 incorrect, 160 total)
 Precision/recall on test set: 87.50%/87.50%
 
@@ -12521,7 +12521,7 @@ Scanning examples...done
 Reading examples into memory...100..200..300..400..500..600..OK. (640 examples read)
 Optimizing.................................................................................................................................................................................................................................................done. (242 iterations)
 Optimization finished (0 misclassified, maxdiff=0.00093).
-Runtime in cpu-seconds: 0.09
+Runtime in cpu-seconds: 0.08
 Number of SV: 610 (including 0 at upper bound)
 L1 loss: loss=0.00000
 Norm of weight vector: |w|=3.20681
@@ -12589,7 +12589,7 @@ Reading examples into memory...100..200..300..400..500..600..OK. (640 examples r
 Setting default regularization parameter C=0.0197
 Optimizing.................................................................................................................................................................................done. (178 iterations)
 Optimization finished (1 misclassified, maxdiff=0.00096).
-Runtime in cpu-seconds: 0.05
+Runtime in cpu-seconds: 0.06
 Number of SV: 613 (including 204 at upper bound)
 L1 loss: loss=53.50243
 Norm of weight vector: |w|=2.65114

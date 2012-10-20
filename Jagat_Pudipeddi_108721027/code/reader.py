@@ -1,32 +1,10 @@
 from __future__ import division
 import nltk
-import nltk.classify.svm
-import svmlight
 import math
 from nlp_common import *
+posTagHash = {}
 
-def getPosTags(line):
-    tagged_words = nltk.pos_tag(nltk.wordpunct_tokenize(line.strip().lower()))
-    return [pos for (word, pos) in tagged_words]
-
-  
-def getFeatureVectors(filename, ngramHash):
-  allFeatures = []
-  for line in open(filename):
-       ngrams = getPosTags(line, N_IN_NGRAM)
-       ufd = nltk.FreqDist(ngrams);
-       subHash = {} 
-       maxFd = max(ufd.values());
-       for ngram in ufd.keys():
-           subHash[ngram] = ngramHash[ngram]
-       sortedKeys = sorted(subHash, key=lambda key: subHash[key])
-       features = []
-       for ngramtype in sortedKeys:
-           features.append((str(ngramHash[ngramtype]), str((ufd[ngramtype]/maxFd) * math.log(TOT_NUM_DOCS/df[ngramtype]))))
-       allFeatures.append(features)
-  return allFeatures
-
-textDir = "/home/jagat/nlp/hotel-reviews"
+textDir = "hotel-reviews"
 truthfulRevFile = textDir + "/hotel_truthful"
 deceptiveRevFile = textDir + "/hotel_deceptive"
 
@@ -38,7 +16,7 @@ truthfulRevs = []
 for line in open(truthfulRevFile):
     truthfulRevs.append(line)
     wt = {}
-    for ngram in getPosTags(line, N_IN_NGRAM):
+    for ngram in getNGrams(line, N_IN_NGRAM):
       if ngram not in ngramHash:
           idx = idx + 1
           ngramHash[ngram] = idx
@@ -53,7 +31,7 @@ deceptiveRevs = []
 for line in open(deceptiveRevFile):
     deceptiveRevs.append(line)
     wt = {}
-    for ngram in getPosTags(line, N_IN_NGRAM):
+    for ngram in getNGrams(line, N_IN_NGRAM):
       if ngram not in ngramHash:
           idx = idx + 1
           ngramHash[ngram] = idx
@@ -65,29 +43,37 @@ for line in open(deceptiveRevFile):
           wt[ngram] = True
 
 
-trueFeatures = getFeatureVectors(truthfulRevFile, ngramHash)
-deceptiveFeatures = getFeatureVectors(deceptiveRevFile, ngramHash)
+trueFeatures = getFeatureVectors(truthfulRevFile, ngramHash, df)
+deceptiveFeatures = getFeatureVectors(deceptiveRevFile, ngramHash, df)
 
-for i in range(NUM_DOC_PER_LABEL):
+for i in range(int(NUM_DOC_PER_LABEL)):
     trueRev = trueFeatures[i]
     print "-1",
     for (feat, val) in trueRev:
         print " " + feat + ":" + val,
-    deceptiveRev = deceptiveFeatures[i]
     print ""
+
+    deceptiveRev = deceptiveFeatures[i]
     print "+1",
     for (feat, val) in deceptiveRev:
         print " " + feat + ":" + val,
     print ""
     
 
-whfile = open("info/Hash_pos" + str(N_IN_NGRAM) + "_Grams.txt", "w");
+whfile = open("info/Hash_" + str(N_IN_NGRAM) + "_Grams.txt", "w");
 srtd = sorted(ngramHash, key=lambda key:  ngramHash[key])
 totdf = 0
 for key in srtd:
     whfile.write(str(ngramHash[key]) + " : " + key + " : " + str(df[key]) + "\n");
     totdf = totdf + df[key]
 whfile.write("Average DF: " + str(totdf/len(df.keys())))
+
+if N_IN_NGRAM == 0:
+    whfile = open("info/Hash_" + str(N_IN_NGRAM) + "_POS.txt", "w");
+    #srtd = sorted(posTagHash, key=lambda key:  posTagHash[key])
+    for key in posTagHash:
+        whfile.write(key + " : " + str(posTagHash[key]) +  "\n");
+
 #avg_df =  reduce(lambda x, y: x + y, df.values()) / len(df.values())
 #print "Average DF: " + str(avg_df)
 
